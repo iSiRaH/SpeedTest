@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Speed Test Website</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <style>
         body {
@@ -18,57 +18,58 @@
             margin: 20px;
             background-color: #2a2a2a;
         }
-    
-        .widget-container {
-            margin-top: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            background: #3d3d3d;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
 
-        .main_topic{
+        .main_topic {
             color: rgb(100, 177, 244);
             font-size: 35px;
             font-family: poppins;
         }
 
-        .instructions{
-            color: rgb(141, 198, 247);
-            font-size: 20px;
-            font-family: poppins;
+        .profile-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .profile-icon{
+            width: 30px;
+            height: 30px;
         }
     </style>
-<body id = "home">
-    <div class ="menu-bar">
-        <button>Home</button>
-        <button>Home</button>
-        <button>Home</button>
-    </div>
 
-    <div>
-        <button 
-            onclick="document.getElementById('home').innerHTML = '<p>set iframe here</p>';">Click Here to start test</button>
-    </div>
+</head>
+
+
+<body id="home">
+    <header>
+        <div class="menu-bar">
+            <button onclick="
+                    window.location.href = 'index.html';
+                ">Home</button>
+            <button class = "support-button">Support</button>
+            <button class = "about-button">About</button>
+            <button class = "profile-button", title="profile">
+                <img class = "profile-icon", src = "assets/icons/profile.png", alt = "profile">
+            </button>
+        </div>
+    </header>
 
     <h1 class="main_topic">Test Your Internet Speed</h1>
-    <p class="instructions">Click Start to begin test.</p>
-<div class="widget-container">
-    <!-- OST Widget code start -->
-    <div style="text-align:right;">
-        <div style="min-height:360px;">
-            <div style="width:100%;height:0;padding-bottom:50%;position:relative;">
-                <iframe style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;min-height:360px;overflow:hidden !important;" src="//openspeedtest.com/speedtest"></iframe>
-            </div>
-        </div>
+
+
+    <div>
+        <button onclick="
+                window.location.href = 'pages/speed_test_page.html';
+            ">Click Here to start test</button>
     </div>
-    <!-- OST Widget code end -->
-</div>
-<footer style="margin-top: 40px; font-size: 0.9em; color: #666;">
-    <p>&copy; 2025 Speed Test Website. All rights reserved.</p>
-</footer>
+
+
+    <footer style="margin-top: 40px; font-size: 0.9em; color: #666;">
+        <p>&copy; 2025 Speed Test Website. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
