@@ -46,13 +46,18 @@
 <body id="home">
     <header>
         <div class="menu-bar">
-            <button onclick="
-                    window.location.href = 'index.html';
+            <button class = "home-button", onclick="
+                window.location.href = 'index.html';
                 ">Home</button>
-            <button class = "support-button">Support</button>
-            <button class = "about-button">About</button>
-            <button class = "profile-button", title="profile">
-                <img class = "profile-icon", src = "assets/icons/profile.png", alt = "profile">
+            <button class = "support-button", onclick="
+                window.location.href = 'pages/support-page.html';
+            ">Support</button>
+            <button class = "about-button", onclick="
+                window.location.href = 'pages/about-page.html';"
+            >About</button>
+            <button class = "profile-button", title="profile", onclick="
+                window.location.href = 'pages/profile-page.html';">
+                <img class = "profile-icon", src = "assets/icons/profile-white.png", alt = "profile">
             </button>
         </div>
     </header>
