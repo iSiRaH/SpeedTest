@@ -11,7 +11,7 @@ Ping Test: Measures the round-trip time for a packet of data to travel from the 
 Responsive Design: Works on desktop and mobile devices.
 
 <h2>Technologies Used</h2>
-HTML: Structure and content of the website.
+**HTML: Structure and content of the website.**
 
 CSS: Styling the page (optional, you can add custom styles for a better look).
 
